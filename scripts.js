@@ -112,11 +112,11 @@ document.getElementById("botaovalor").onclick = function () {
 
     if (media >= 0 & media <= 5.4) {
         resultado = "Muito Insuficiente";
-    } else if (media >= 6 & media <= 9.4) {
+    } else if (media >= 5.5 & media <= 9.4) {
         resultado = "Insuficiente";
-    } else if (media >= 10 & media <= 13.4) {
+    } else if (media >= 9.5 & media <= 13.4) {
         resultado = "Suficiente";
-    } else if (media >= 14 & media <= 17.4) {
+    } else if (media >= 13.5 & media <= 17.4) {
         resultado = "Bom";
     } else {
         resultado = "Muito Bom";

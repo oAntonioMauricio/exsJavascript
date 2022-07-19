@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html data-theme="emerald" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Introdução -->
+    <div class="hero min-h-screen" style="background-image: url(https://placeimg.com/1000/800/arch);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Exercícios Javacript</h1>
+          </div>
+        </div>
+      </div>
+
+    <!-- Exercicio -->
+    <div class="container mx-auto w-full flex flex-wrap justify-center gap-20 py-20">
+
+        <!-- EX01 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos verificar se é par ou ímpar</h2>
+                <input type="number" id="numeroparimpar" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="número">
+                <p id="teste1"></p>
+                <p id="resultadoparimpar"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaoparimpar" class="btn btn-primary">Verificar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX02 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/226/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos gerar um número aleatório e verificar se é par ou impar</h2>
+                <p id="teste2"></p>
+                <p id="resultadoaleatorio"></p>
+                <div class="card-actions justify-end">
+                    <button id="aleatorio" class="btn btn-primary">Gerar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX03 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/227/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos transformar Quilómetros em Milhas</h2>
+                <input type="number" id="KMS" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="número">
+                <p id="resultadoKMS"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaoKMS" class="btn btn-primary">Transformar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX04 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos transformar Graus em Fahrenheit</h2>
+                <input type="number" id="graus" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="número">
+                <p id="resultadograus"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaograus" class="btn btn-primary">Transformar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX05 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/229/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos calcular a idade de acordo com a data de nascimento</h2>
+                <input type="number" id="ano" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="ano de nascimento">
+                <p id="resultadoidade"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaoidade" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX06 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Modo crescente até 100</h2>
+                <input type="number" id="1e100" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="número">
+                <p id="resutlado1e100"></p>
+                <div class="card-actions justify-end">
+                    <button id="botao1e100" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX07 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Modo decrescente até 1</h2>
+                <input type="number" id="100para1" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="número">
+                <p id="resultado100para1"></p>
+                <div class="card-actions justify-end">
+                    <button id="botao100para1" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX08 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos calcular o índice de massa corporal</h2>
+                <input type="number" id="altura" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="altura (cm)">
+                <input type="number" id="peso" class="input input-bordered input-primary w-full max-w-xs"
+                    placeholder="peso (kg)">
+                <p id="resultadoIMC"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaoIMC" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX09 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Vamos calcular a média do aluno.</h2>
+                <input type="text" id="nome" placeholder="nome do aluno"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <input type="number" id="valor1" placeholder="1º valor"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <input type="number" id="valor2" placeholder="2º valor"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <input type="number" id="valor3" placeholder="3º valor"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <p id="resultadovalor"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaovalor" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EX10 -->
+        <div class="flex card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/228/arch" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Calculadora</h2>
+                <input type="number" id="valorcalc1" placeholder="número 1"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <input type="number" id="valorcalc2" placeholder="número 2"
+                    class="input input-bordered input-primary w-full max-w-xs">
+                <p>Operação:</p>
+                <form>
+                    <input type="radio" id="soma" name="op_calculadora" value="soma">
+                    <label for="soma">Soma</label><br>
+
+                    <input type="radio" id="diferença" name="op_calculadora" value="diferença">
+                    <label for="diferença">Diferença</label><br>
+
+                    <input type="radio" id="multiplicar" name="op_calculadora" value="multiplicar">
+                    <label for="multiplicar">Multiplicação</label><br>
+
+                    <input type="radio" id="dividir" name="op_calculadora" value="dividir">
+                    <label for="dividir">Divisão</label><br>
+                </form>
+                <p id="resultadocalculadora"></p>
+                <div class="card-actions justify-end">
+                    <button id="botaocalculadora" class="btn btn-primary">Calcular</button>
+                    <button id="botaolimpar" class="btn btn-primary">Limpar</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
